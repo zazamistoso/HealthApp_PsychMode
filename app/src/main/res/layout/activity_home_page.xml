@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homepage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage"
+    android:background="@drawable/bgcolor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome, Zara"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Psych Mode"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:id="@+id/howareyou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How are you feeling today?"
+                android:textColor="@color/white"
+                android:layout_below="@+id/welcome"
+                android:padding="15dp"
+                android:layout_marginTop="50dp"
+                android:textSize="25sp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/cornerbg"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/buttonContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/howareyou"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:padding="15dp"
+                android:background="@drawable/corner_bg">
+
+
+                <ImageButton
+                    android:id="@+id/crazy"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/crazy"
+                    android:scaleType="fitCenter"
+                    android:background="#00000000"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"/>
+
+                <ImageButton
+                    android:id="@+id/smile"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/smile"
+                    android:layout_toRightOf="@+id/crazy"
+                    android:scaleType="fitCenter"
+                    android:background="#00000000"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"/>
+
+                <ImageButton
+                    android:id="@+id/neutral"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/neutral"
+                    android:layout_toRightOf="@+id/smile"
+                    android:scaleType="fitCenter"
+                    android:background="#00000000"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"/>
+
+                <ImageButton
+                    android:id="@+id/sad"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/sad"
+                    android:layout_toRightOf="@+id/neutral"
+                    android:scaleType="fitCenter"
+                    android:background="#00000000"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"/>
+
+                <ImageButton
+                    android:id="@+id/crying"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/crying"
+                    android:layout_toRightOf="@+id/sad"
+                    android:scaleType="fitCenter"
+                    android:background="#00000000"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/buttonContainer"
+                android:layout_marginTop="70dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/profile"
+                android:scaleType="fitCenter"
+                android:background="#00FFFFFF"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageButton
+                android:id="@+id/diary"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/buttonContainer"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/diary"
+                android:scaleType="fitCenter"
+                android:background="#00FFFFFF"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:id="@+id/editprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit profile"
+                android:textColor="@color/black"
+                android:layout_below="@+id/profile"
+                android:layout_marginLeft="57dp"
+                android:layout_alignParentLeft="true"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/journal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Journal"
+                android:textColor="@color/black"
+                android:layout_below="@+id/profile"
+                android:layout_marginRight="75dp"
+                android:layout_alignParentRight="true"
+                android:textSize="15sp"/>
+
+            <ImageButton
+                android:id="@+id/resources"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/editprofile"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/resources"
+                android:scaleType="fitCenter"
+                android:background="#00FFFFFF"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageButton
+                android:id="@+id/community"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/journal"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/community"
+                android:scaleType="fitCenter"
+                android:background="#00FFFFFF"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:id="@+id/articles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View articles"
+                android:textColor="@color/black"
+                android:layout_below="@+id/resources"
+                android:layout_marginLeft="57dp"
+                android:layout_alignParentLeft="true"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/communitytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Community"
+                android:textColor="@color/black"
+                android:layout_below="@+id/community"
+                android:layout_marginRight="60dp"
+                android:layout_alignParentRight="true"
+                android:textSize="15sp"/>
+
+            <ImageButton
+                android:id="@+id/booking"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/articles"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/booking"
+                android:scaleType="fitCenter"
+                android:background="#00FFFFFF"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageButton
+                android:id="@+id/mood"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/communitytext"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/mood"
+                android:scaleType="fitCenter"
+                android:background="#00FFFFFF"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:id="@+id/bookingtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book appointment"
+                android:textColor="@color/black"
+                android:layout_below="@+id/booking"
+                android:layout_marginLeft="45dp"
+                android:layout_alignParentLeft="true"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/moodtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recorded mood"
+                android:textColor="@color/black"
+                android:layout_below="@+id/mood"
+                android:layout_marginRight="47dp"
+                android:layout_alignParentRight="true"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
